@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La vida a través de la música</title>
+<link rel="icon" href="favicon.ico">
+
+  <!-- Tipografía elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #141414;
+      --dark-brown: #2A241C;
+      --olive: #3B3528;
+      --sand: #E6DDC8;
+      --soft-cream: #F3EFE6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: var(--black);
+      color: var(--soft-cream);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 80px 10%;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("https://i.pinimg.com/1200x/0f/5a/49/0f5a49bd1dc962863c9e949df017f5e3.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      color: var(--sand);
+    }
+
+    section {
+      padding: 80px 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    section:nth-child(even) {
+      background-color: var(--dark-brown);
+    }
+
+    section h2 {
+      font-size: 2.1rem;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 1rem;
+      text-align: justify;
+      color: var(--sand);
+    }
+
+    .image-box {
+      height: 320px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .img-1 {
+      background-image: url("https://i.pinimg.com/736x/3e/c1/93/3ec1931423c2887a2645eb3f9edc067f.jpg");
+    }
+
+    .img-2 {
+      background-image: url("https://i.pinimg.com/736x/80/59/cb/8059cbfb658d972a691c31ce558bccac.jpg");
+    }
+
+    .img-3 {
+      background-image: url("https://i.pinimg.com/1200x/65/ec/df/65ecdf2b9a3e2c7bf22a00cf813f1f58.jpg");
+    }
+
+    footer {
+      padding: 90px 8%;
+      background-color: var(--olive);
+    }
+
+    footer h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--soft-cream);
+      color: var(--black);
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      section {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cómo los músicos perciben la vida</h1>
+    <p>
+      Para un músico, la vida no solo se vive: se escucha, se siente y se transforma en arte.
+    </p>
+  </header>
+
+  <section>
+    <div>
+      <h2>La vida como sonido</h2>
+      <p>
+        Los músicos perciben el mundo a través de sonidos, silencios y ritmos. Cada emoción,
+        cada experiencia y cada recuerdo puede convertirse en una melodía. Para ellos, la
+        vida no es lineal, sino una composición en constante cambio.
+      </p>
+    </div>
+    <div class="image-box img-1"></div>
+  </section>
+
+  <section>
+    <div class="image-box img-2"></div>
+    <div>
+      <h2>La música como lenguaje emocional</h2>
+      <p>
+        La música permite expresar aquello que no siempre puede decirse con palabras.
+        Los músicos convierten el dolor, la alegría y la esperanza en arte, creando
+        un puente emocional entre ellos y quienes escuchan.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h2>El arte que une a la humanidad</h2>
+      <p>
+        La música es un arte universal que trasciende idiomas y culturas. A través de ella,
+        los músicos conectan personas, preservan historias y acompañan momentos importantes
+        de la vida humana.
+      </p>
+    </div>
+    <div class="image-box img-3"></div>
+  </section>
+
+  <footer>
+    <h2>La importancia de la música en la vida humana</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Identidad</h3>
+        <p>La música ayuda a las personas a expresar quiénes son.</p>
+      </div>
+
+      <div class="card">
+        <h3>Emoción</h3>
+        <p>Permite sentir, sanar y comprender emociones profundas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Conexión</h3>
+        <p>Une culturas, generaciones y realidades distintas.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
